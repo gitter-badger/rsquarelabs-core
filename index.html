@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>RSQUARE LABS | OpenSource</title>
+
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+  <style>
+  body, html {
+
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.4em;
+
+  }
+  section.hero-section{
+    background: url('hero.png') #F1E68C;
+    min-height: 70%;
+  }
+  .hero {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.3em;
+    margin-bottom: 2em;
+  }
+  p, ul>li{
+    line-height: 1.2em;
+  }
+  h2 {
+    border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  }
+  .courier-font{
+    font-family: "Courier"
+  }
+  .fs-14{
+    font-size: 18px;
+  }
+  .subscribe {
+    padding: 20px 20px;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .pre{
+    font-family: "Courier";
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  </style>
+
+</head>
+
+<body ng-app="app" ng-controller="appCtrl">
+  <section class="hero-section">
+
+    <div class="row">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1 hero text-center">
+          <h1>rsquarelabs-core is a collection of scientific research tools, used in Computation Drug Discovery. The core package helps you create customised automation protocols/pipelines for the tasks that need huge repeatation tasks with less/no expertise in the tools</h1>
+        </div>
+        <!-- <div class="col-md-6"></div> -->
+        <div class="col-md-8 col-md-offset-2">
+          <p class="courier-font fs-14 pre text-center">pip install rsquarelabs-core</p>
+          <div class="clearfix"></div>
+
+          <div class="row text-center">
+            <div class="col-xs-3">
+              <p>Open Issues</p>
+              <h4>{{rsquareData.open_issues_count}}</h4>
+            </div>
+            <div class="col-xs-3">
+              <p>Forks Count</p>
+              <h4>{{rsquareData.forks_count}}</h4>
+            </div>
+            <div class="col-xs-3">
+              <p>Watchers</p>
+              <h4>{{rsquareData.watchers_count}}</h4>
+            </div>
+
+            <div class="col-xs-3">
+              <p>Starring</p>
+              <h4>{{rsquareData.stargazers_count}}</h4>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <hr>
+            <p>Last updated at {{rsquareData.updated_at  | date:'dd MMM, yyyy hh:mma'}}</p>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="">Getting Started </h2>
+          <p>To install MongoEngine, simply run:</p>
+          <pre>pip install rsquarelabs-core</pre>
+          <p>Downloads are also available as .zip/.tar.gz archives for the stable and master versions.</p>
+          <p>To get the very good understanding on rsquarelabs-core. You can access use the <a href="http://docs.rsquarelabs.org">Documentation</a> and <a href="http://docs.rsquarelabs.org/en/latest/tutorials.html">Tutorials</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="">Modules/Included in the rsquarelabs-core</h2>
+            <ul>
+              <li>Gromacs</li>
+              <li>2D-QSAR</li>
+              <li>RSQUARE Molecular Viewer</li>
+              <!-- <li></li> -->
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="">Opensource Community & Contributions </h2>
+
+          <p>Want to join an open source project? Now's your chance!</p>
+          <p>Don't know what you want to help out with? Well here are some areas that we could use help with:</p>
+          <ul>
+            <li>rsquarelabs-core features - scientific thoughts, architecture</li>
+            <li>rsquarelabs-core features - coding</li>
+            <li>rsquarelabs-core documentation, tutorials and examples</li>
+            <li>rsquarelabs-core website</li>
+
+          </ul>
+          <p>If you want to join our community as a contributor, please leave a message</p>
+
+          <p>To contribute to the project contact me <a href="https://twitter.com/rrmerugu">@rrmerugu</a> or fork any repository from the <a href="https://github.com/rsquarelabs">rsquarelabs</a> organisation on github and send a pull request, all contributions and suggestions are welcome!</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="col-md-12">
+          <p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+  <script>
+  var app = angular.module('app', []);
+  app.controller('appCtrl', function($scope, $http) {
+    console.log("yeah");
+    $scope.subdata = {};
+
+    // https://api.github.com/repos/octocat/Hello-World?access_token=5643c54f20eb6e96cded2f429bdd907ed2b83611
+
+
+
+
+
+    $scope.addSubscriber = function(data) {
+
+      $http({
+        method: 'POST',
+        url: 'http://apis.rsquarelabs.xyz/apis/1.0dev/subscribe',
+        data: data
+      }).then(function successCallback(response) {
+
+        console.log(response);
+        if (response.status == 201) {
+          $scope.mesg = "Thanks for your interest, you will receive our updates from us now on";
+        } else {
+          $scope.mesg = "Unable to add you to subscribers list";
+        }
+
+      }, function errorCallback(response) {
+        console.log(response);
+        $scope.mesg = "Unable to add you to subscribers list";
+      });
+    };
+
+
+
+
+    $scope.getRepoInfo = function(){
+      var request = $http({
+        method : 'get',
+        'url' : 'https://api.github.com/repos/rsquarelabs/rsquarelabs-core?access_token=5643c54f20eb6e96cded2f429bdd907ed2b83611'
+      });
+      request.success(function(data){
+        console.log(data);
+
+        $scope.rsquareData = data;
+        // $scope.opensourceRepos = data;
+
+      }).error(function(data){
+        console.error(data);
+      })
+    };
+
+
+    $scope.getRepoInfo();
+  });
+  </script>
+
+
+</body>
+
+</html>
